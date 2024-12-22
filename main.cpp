@@ -6,7 +6,6 @@ using namespace xxx;
 //this file can teach you how to use strnum.h , you can also research by your self
 //You should compile this file together with strnum.cpp/strnum.lib/strnum.dll
 //Like this : g++ main.cpp strnum.cpp -o main.exe
-//code=utf-8::打OI的小朋友们注意了,如果用Dev-Cpp编译,要在编译选项中加上strnum.cpp
 
 static void printAll(strint *x){
 	printf("lenth : %d\n",x->lenth);
@@ -33,7 +32,7 @@ static void printAll(strflt *x){
 }
 
 int main(){
-	isErrorOpen = true;
+	strnum_isErrorOpen = true;
 #if 0
 	//strint test
 	strint a,b;
