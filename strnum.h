@@ -15,7 +15,7 @@ namespace xxx{
 //Do not to much , or may error
 const int strnum_inf = 1e3+5;
 
-extern bool isErrorOpen;
+extern bool strnum_isErrorOpen;
 class strnum_bitaddress;
 struct __strnum_bitaddress_struct
 {int x,bit;};
