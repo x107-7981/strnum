@@ -30,10 +30,10 @@ namespace xxx{
 using namespace std;
 
 //print error
-bool isErrorOpen = true;
+bool strnum_isErrorOpen = true;
 const strnum_io strnum_io2(2),strnum_io8(8),strnum_io10(10),strnum_io16(16);
 [[noreturn]] static void error(int mode){
-	if(isErrorOpen) switch(mode){
+	if(strnum_isErrorOpen) switch(mode){
 		case 1: printf("Error! The number system is not include in the support list.\n");break;
 		case 2: printf("Error! The inf is too big that make no memory.\n");break;
 		case 3: printf("Error! The ptr of wherebegin is a cross address.\n");break;
@@ -771,7 +771,7 @@ strflt strint::strc_strflt(){
 // logv2 operation
 int strint::log2(bool ignoreSign){
 	if((this->lenth == 1 && *(char*)(this->ptrhead) == 0) || (this->sign() && !ignoreSign)){
-		if(isErrorOpen)
+		if(strnum_isErrorOpen)
 			error(4);
 		else
 			return -1;
